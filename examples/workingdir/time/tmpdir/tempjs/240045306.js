@@ -1,0 +1,1 @@
+(function(){var c=22,b="_ga_originalSendHitTask";return function(a){window[b]=window[b]||a.get("sendHitTask");"number"===typeof c&&a.set("dimension"+c,a.get("clientId"));a.set("sendHitTask",function(d){var f=d,e=window[b],g=!0;try{g&&e(d)}catch(h){e(f)}})}})();

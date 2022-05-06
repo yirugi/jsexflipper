@@ -1,0 +1,1 @@
+if(typeof blueConicClient!=='undefined'){var s="SCNG_KnownNonSubsAll";var sg=blueConicClient.getSegments();var sn=[];function bc_check(){if(sg.length>0){for(var i=0;i<sg.length;i+=1){sn.push(sg[i].name)}}return(sn.includes(s))?true:false}bc_check()}else{function fail(){return false}fail()}

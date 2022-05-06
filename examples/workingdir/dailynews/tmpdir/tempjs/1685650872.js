@@ -1,0 +1,1 @@
+(function(){return function(c){var a=window.dataLayer;if("object"==typeof a)for(var b=0;b<a.length;b++){if(a[b][c])return a[b][c]}else return null}})();

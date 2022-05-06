@@ -1,0 +1,1 @@
+class C { foo(){} }; var t = (new C).foo.name === "foo"; (t)

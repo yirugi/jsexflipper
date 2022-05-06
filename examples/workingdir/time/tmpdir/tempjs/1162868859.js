@@ -1,0 +1,1 @@
+var f = "foo"; ({f() { return f; }}).f() === "foo";

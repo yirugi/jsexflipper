@@ -1,0 +1,1 @@
+JSON.parse(localStorage.getItem(Object.keys(localStorage).find(element => element.match(/__auth0UserStorage/m)))).userId

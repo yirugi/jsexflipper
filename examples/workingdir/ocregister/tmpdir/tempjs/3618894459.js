@@ -1,0 +1,1 @@
+JSON.parse(localStorage.getItem(Object.keys(localStorage).find(element => element.match(/connext_user_data_/m)))).MasterId

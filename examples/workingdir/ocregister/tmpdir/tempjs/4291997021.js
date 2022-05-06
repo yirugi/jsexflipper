@@ -1,0 +1,1 @@
+function findDataLayer(){if(typeof dataLayer!=="undefined"){for(let[index,data]of dataLayer.entries()){if(data["Section"]){return data["Section"]}}}else{return false}}findDataLayer();

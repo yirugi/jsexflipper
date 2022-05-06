@@ -1,0 +1,1 @@
+(function(){for(var c=[25],a=document.querySelector("div.body-copy"),d=a.offsetHeight,b=0;a;)b+=a.offsetTop-a.scrollTop+a.clientTop,a=a.offsetParent;return c.map(function(a){return parseInt(.01*d*a+b)}).join()})();

@@ -1,0 +1,1 @@
+function findDataLayer(){if(typeof dataLayer!=="undefined"){for(let[index,data]of dataLayer.entries()){if(data["Page Type"]){return data["Page Type"]}}}else{return false}}findDataLayer();

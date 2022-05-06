@@ -1,0 +1,1 @@
+function printCheck(){let householdLevels=["5","16","23","25","35","36","43","45","55","65","75","85","95","105","115","145"];let currentLevel=Connext.Storage.GetUserData().DigitalAccess.Subscription.HouseHoldSubscriptionLevel;let isPrint=householdLevels.find(k=>k==currentLevel);if(isPrint){return true}else{return false}}printCheck();

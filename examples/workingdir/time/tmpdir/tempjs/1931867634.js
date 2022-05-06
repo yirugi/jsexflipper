@@ -1,0 +1,1 @@
+function av_sciv_hndlr1651784500768(t,e){t&&e&&(t.Element.prototype.av_OrigScrollIntoView||(t.Element.prototype.av_OrigScrollIntoView=t.Element.prototype.scrollIntoView,t.Element.prototype.scrollIntoView=function(){for(var t=this;t&&t.parentNode&&t!==t.parentNode;){if(t===e)return;t=t.parentNode}return this.av_OrigScrollIntoView.apply(this,arguments)}))}

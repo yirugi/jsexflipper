@@ -1,0 +1,101 @@
+(function anonymous(types,util
+) {
+return function ProtoPlayspaceResponse$toObject(m,o){
+  if(!o)
+  o={}
+  var d={}
+  if(o.arrays||o.defaults){
+  d.players=[]
+  d.lineItems=[]
+  }
+  if(o.objects||o.defaults){
+  d.cookieSyncUrls={}
+  }
+  if(o.defaults){
+  d.errorMessage=""
+  d.browser=null
+  d.geoLocation=null
+  d.explorationMode=false
+  d.supplyChain=null
+  d.secondLevelDomain=""
+  d.userInformation=null
+  d.serverAb0=0
+  d.serverAb1=0
+  d.isSeoTraffic=false
+  d.apiHostUrl=""
+  d.publisherNetworkCode=""
+  d.iOSAppID=""
+  d.hashedPageUrl=""
+  d.bundleAbId=""
+  d.bundlePart=""
+  }
+  if(m.errorMessage!=null&&m.hasOwnProperty("errorMessage")){
+  d.errorMessage=m.errorMessage
+  }
+  if(m.players&&m.players.length){
+  d.players=[]
+  for(var j=0;j<m.players.length;++j){
+  d.players[j]=types[1].toObject(m.players[j],o)
+  }
+  }
+  if(m.browser!=null&&m.hasOwnProperty("browser")){
+  d.browser=types[2].toObject(m.browser,o)
+  }
+  if(m.geoLocation!=null&&m.hasOwnProperty("geoLocation")){
+  d.geoLocation=types[3].toObject(m.geoLocation,o)
+  }
+  if(m.lineItems&&m.lineItems.length){
+  d.lineItems=[]
+  for(var j=0;j<m.lineItems.length;++j){
+  d.lineItems[j]=types[4].toObject(m.lineItems[j],o)
+  }
+  }
+  var ks2
+  if(m.cookieSyncUrls&&(ks2=Object.keys(m.cookieSyncUrls)).length){
+  d.cookieSyncUrls={}
+  for(var j=0;j<ks2.length;++j){
+  d.cookieSyncUrls[ks2[j]]=m.cookieSyncUrls[ks2[j]]
+  }
+  }
+  if(m.explorationMode!=null&&m.hasOwnProperty("explorationMode")){
+  d.explorationMode=m.explorationMode
+  }
+  if(m.supplyChain!=null&&m.hasOwnProperty("supplyChain")){
+  d.supplyChain=types[7].toObject(m.supplyChain,o)
+  }
+  if(m.secondLevelDomain!=null&&m.hasOwnProperty("secondLevelDomain")){
+  d.secondLevelDomain=m.secondLevelDomain
+  }
+  if(m.userInformation!=null&&m.hasOwnProperty("userInformation")){
+  d.userInformation=types[9].toObject(m.userInformation,o)
+  }
+  if(m.serverAb0!=null&&m.hasOwnProperty("serverAb0")){
+  d.serverAb0=m.serverAb0
+  }
+  if(m.serverAb1!=null&&m.hasOwnProperty("serverAb1")){
+  d.serverAb1=m.serverAb1
+  }
+  if(m.isSeoTraffic!=null&&m.hasOwnProperty("isSeoTraffic")){
+  d.isSeoTraffic=m.isSeoTraffic
+  }
+  if(m.apiHostUrl!=null&&m.hasOwnProperty("apiHostUrl")){
+  d.apiHostUrl=m.apiHostUrl
+  }
+  if(m.publisherNetworkCode!=null&&m.hasOwnProperty("publisherNetworkCode")){
+  d.publisherNetworkCode=m.publisherNetworkCode
+  }
+  if(m.iOSAppID!=null&&m.hasOwnProperty("iOSAppID")){
+  d.iOSAppID=m.iOSAppID
+  }
+  if(m.hashedPageUrl!=null&&m.hasOwnProperty("hashedPageUrl")){
+  d.hashedPageUrl=m.hashedPageUrl
+  }
+  if(m.bundleAbId!=null&&m.hasOwnProperty("bundleAbId")){
+  d.bundleAbId=m.bundleAbId
+  }
+  if(m.bundlePart!=null&&m.hasOwnProperty("bundlePart")){
+  d.bundlePart=m.bundlePart
+  }
+  return d
+}
+})

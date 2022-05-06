@@ -1,0 +1,1 @@
+function defaultParams(a = 1) { return a === 1; }
